@@ -24,6 +24,7 @@ title: "LithoSim: A Large, Holistic Lithography Simulation Benchmark for AI-Driv
 	<strong> Figure 2: </strong>LithoSim Benchmark Overview.
 </p>
 
+
 # Getting Started
 
 - [Quickstart](https://dw-hongquan.github.io/LithoSim/quickstart.html)
