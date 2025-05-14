@@ -11,17 +11,16 @@ title: "LithoSim: A Large, Holistic Lithography Simulation Benchmark for AI-Driv
 <div>
 	<img width="900" src="../assets/img/lithosim/overview.png" class="center"> 
 </div>
-
 <p>
 <strong>Figure 1: (a). Lithography simulation tools by combining source and defocus on a fixed projector to create an optical model (a.k.a TCC), then using mask and dose inputs to generate resist. (b). Physical process for advanced optical lithography, resist imaging performance depends on source and mask quality, as well as dose and defocus fluctuations. (c). Previous benchmark (LithoBench, NIPS'23) at 45nm node ignored source, dose, and defocus effects, using DNNs for mask-to-resist generation. (d). Our benchmark at sub-28nm node considers simulation across wider mask ranges with source and process variations, using data-driven or physics-informed generative models for complete simulation.
-</p>>
+</p>
 
 <div>
 	<img width="900" src="../assets/img/lithosim/data.png" class="center"> 
 </div>
 <p style="text-align:center">
 	<strong> Figure 2: </strong>LithoSim Benchmark Overview.
-</p>>
+</p>
 
 
 # Getting Started
