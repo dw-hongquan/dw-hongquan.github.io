@@ -6,7 +6,7 @@ title: "LithoSim: A Large, Holistic Lithography Simulation Benchmark for AI-Driv
 
 | Update Status                       | Contributors                          | Deployment Status                                    | Linting                                      |
 | ----------------------------------- | ------------------------------------- | ---------------------------------------------------- | -------------------------------------------- |
-| ![GitHub last commit](https://img.shields.io/github/last-commit/dw-hongquan/dw-hongquan.github.io) | ![GitHub contributors](https://img.shields.io/github/contributors/dw-hongquan/dw-hongquan.github.io) | [![pages-build-deployment](https://github.com/dw-hongquan/dw-hongquan.github.io/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/dw-hongquan/dw-hongquan.github.io/actions/workflows/pages/pages-build-deployment) | [![Lint](https://img.shields.io/github/actions/workflow/status/dw-hongquan/dw-hongquan.github.io/lint.yml?label=lint)](https://github.com/dw-hongquan/LithoSim) |
+| ![GitHub last commit](https://img.shields.io/github/last-commit/dw-hongquan/dw-hongquan.github.io) | ![GitHub contributors](https://img.shields.io/github/contributors/dw-hongquan/dw-hongquan.github.io) | [![pages-build-deployment](https://github.com/dw-hongquan/dw-hongquan.github.io/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/dw-hongquan/dw-hongquan.github.io/actions/workflows/pages/pages-build-deployment) | [![Lint](https://github.com/dw-hongquan/LithoSim)](https://github.com/dw-hongquan/dw-hongquan.github.io/actions/workflows/lint.yml) |
 
 # Overview
 
