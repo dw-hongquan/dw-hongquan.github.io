@@ -4,9 +4,13 @@ title: "LithoSim: A Large, Holistic Lithography Simulation Benchmark for AI-Driv
 ---
 
 
+<div align="center">
+
 | Update Status | Contributors | Deployment Status |
 | ----------------------------------- | ------------------------------------- | ---------------------------------------------------- |
 | ![GitHub last commit](https://img.shields.io/github/last-commit/dw-hongquan/dw-hongquan.github.io) | [![contributors](https://img.shields.io/github/contributors/dw-hongquan/dw-hongquan.github.io.svg)](https://github.com/dw-hongquan/dw-hongquan.github.io/graphs/contributors) | [![pages-build-deployment](https://github.com/dw-hongquan/dw-hongquan.github.io/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/dw-hongquan/dw-hongquan.github.io/actions/workflows/pages/pages-build-deployment) |
+
+</div>
 
 # Overview
 
