@@ -1,12 +1,23 @@
 # Quickstart
 
-**Step 1**
+**LithoSim Benchmark Download**
 
-The first step is to download the subsampled low-resolution real-geography version of the data [here](https://huggingface.co/datasets/LEAP/subsampled_low_res/tree/main). This contains subsampled and prenormalized data that was used for training, validation, and metrics for the ClimSim paper. It can be reproduced with the full version of the [dataset](https://huggingface.co/datasets/LEAP/ClimSim_low-res) using the [`preprocessing/create_npy_data_splits.ipynb`](https://github.com/leap-stc/ClimSim/blob/main/preprocessing/create_npy_data_splits.ipynb) notebook.
+The first step is to download LithoSim Benchmark [here](https://huggingface.co/datasets/grandiflorum/LithoSim), featuring over 4 million high-resolution input-output pairs with rigorous physical correspondence. The dataset systematically incorporates alterable optical source distributions, metal and via mask topologies with optical proximity correction (OPC) variants, and process windows reflecting fab-realistic variations.
 
-System requirements can be found [here](https://github.com/leap-stc/ClimSim/blob/main/system_requirements.md). This was contributed by [STAT GU4243/GR 5243 Applied Data Science - Fall 2023 at Columbia University](https://github.com/TZstatsADS/ADS_Teaching/blob/master/16-Fall2023/Projects_StarterCodes/Project3-ClimSim/asset/system_requirements.md).
+Please unzip all *.tar.gz file using following command
+```
+tar -xzvf *.tar.gz
+```
 
 Training data corresponds to **train_input.npy** and **train_target.npy**. Validation data corresponds to **val_input.npy** and **val_target.npy**. Scoring data (which can be treated as a test set) corresponds to **scoring_input.npy** and **scoring_target.npy**. We have an additional held-out test set that we are using for our [Kaggle competition](https://www.kaggle.com/competitions/leap-atmospheric-physics-ai-climsim).
+
+**Minimum System Requirements**
+- RAM: At least 60GB (80GB Recommended)
+- Processor: Multicore with good processing speed
+- Python: Version 3.9 or later
+- Storage: SSD with ample space for large datasets
+
+
 
 **Step 2**
 
