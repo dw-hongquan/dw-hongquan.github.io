@@ -1,5 +1,11 @@
 # Quickstart
 
+**Minimum System Requirements**
+- RAM: At least 60GB (80GB Recommended)
+- Processor: Multicore with good processing speed
+- Python: Version 3.9 or later
+- Storage: SSD with ample space for large LithoSim datasets
+
 **LithoSim Benchmark Download**
 
 The first step is to download LithoSim Benchmark [here](https://huggingface.co/datasets/grandiflorum/LithoSim), featuring over 4 million high-resolution input-output pairs with rigorous physical correspondence. The dataset systematically incorporates alterable optical source distributions, metal and via mask topologies with optical proximity correction (OPC) variants, and process windows reflecting fab-realistic variations.
@@ -9,15 +15,7 @@ Please unzip all *.tar.gz file using following command
 tar -xzvf *.tar.gz
 ```
 
-Training data corresponds to **train_input.npy** and **train_target.npy**. Validation data corresponds to **val_input.npy** and **val_target.npy**. Scoring data (which can be treated as a test set) corresponds to **scoring_input.npy** and **scoring_target.npy**. We have an additional held-out test set that we are using for our [Kaggle competition](https://www.kaggle.com/competitions/leap-atmospheric-physics-ai-climsim).
-
-**Minimum System Requirements**
-- RAM: At least 60GB (80GB Recommended)
-- Processor: Multicore with good processing speed
-- Python: Version 3.9 or later
-- Storage: SSD with ample space for large datasets
-
-
+Training data corresponds to **train_val** folders (i.e. ```./lithosim/opc_metal/train_val```). Test data corresponds to **test** folders (i.e. ```./lithosim/opc_metal/test``` and ```./lithosim/ood/test```). The training and validation splits can be found at ```train_val_split``` in ```./lithosim/configs/data/litho.yaml```.
 
 **Step 2**
 
