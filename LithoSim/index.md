@@ -20,10 +20,10 @@ title: "LithoSim: A Large, Holistic Lithography Simulation Benchmark for AI-Driv
 * [Quickstart](https://dw-hongquan.github.io/LithoSim/quickstart.html)
 * [Dataset Information](https://dw-hongquan.github.io/LithoSim/data-info.html)
 
-# **Models and Evaluation**
+<!-- # **Models and Evaluation**
 
 * [Baseline Models](https://dw-hongquan.github.io/LithoSim/baseline-models.html)
-* [Evaluation](https://dw-hongquan.github.io/LithoSim/evalation.html)
+* [Evaluation](https://dw-hongquan.github.io/LithoSim/evalation.html) -->
 
 # **Project Structure**
 
