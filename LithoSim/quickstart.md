@@ -17,24 +17,49 @@ tar -xzvf *.tar.gz
 
 Training data corresponds to **train_val** folders (i.e. ```./lithosim/opc_metal/train_val```). Test data corresponds to **test** folders (i.e. ```./lithosim/opc_metal/test``` and ```./lithosim/ood/test```). The training and validation splits can be found at ```train_val_split``` in ```./lithosim/configs/data/litho.yaml```.
 
-**Step 2**
+**Code Download and Enviromental Requirements**
 
-Install the `climsim_utils` python tools, by running the following code from the root of the [GitHub repo](https://github.com/leap-stc/ClimSim/tree/main):
+Following these commands:
+
+```bash
+# clone project
+git clone https://github.com/dw-hongquan/LithoSim
+cd LithoSim
+
+# [OPTIONAL] create conda environment
+conda create -n myenv python=3.9
+conda activate myenv
+
+# install pytorch according to instructions
+# https://pytorch.org/get-started/
+
+# install requirements
+pip install -r requirements.txt
+```
+
+If you are prefered to use conda dependences:
+```bash
+conda install --file environment.yaml
+```
+
+**Prepare Dataset Path Files**
+
+LithoSim use ```lithosim_path.txt``` to manage all sub-datasets. Please use ```./lithosim/tool/dataset2txt.py``` and replace ```dataset_dir``` and ```txt_path``` to generate you own path.
+
+```bash
+python tool/dataset2txt.py
+```
+
+Each link of the ```.txt``` path file will contain 5 components:
 
 ```
-pip install .
+source_path mask_path dose_value defocus_value resist_path
 ```
 
-If you already have all `climsim_utils` dependencies (`tensorflow`, `xarray`, etc.) installed in your local environment, you can alternatively run:
+**Training and Validation**
 
-```
-pip install . --no-deps
-```
+Train your model on the training/validation data and test using the test data. Edit ```train_val_path```, ```test_path```, and ```batch_size``` at ```./lithosim/configs/data/litho.yaml```.
 
-**Step 3**
+**Evaluation**
 
-Train your model on the training data and validate using the validation data. If you wish to use something like a CNN, you will probably want to separate the variables into channels and broadcast scalars into vectors of the same dimension as vertically-resolved variables. Methods to do this can be found in the [`climsim_utils/data_utils.py`](https://github.com/leap-stc/ClimSim/blob/main/climsim_utils/data_utils.py) script.
-
-**Step 4**
-
-Evaluation time! Use the [`evaluation/main_figure_generation.ipynb`](https://github.com/leap-stc/ClimSim/blob/main/evaluation/main_figure_generation.ipynb) notebook to see how your model does! Use the **calc_MAE**, **calc_RMSE**, and **calc_R2** methods in the [`climsim_utils/data_utils.py`](https://github.com/leap-stc/ClimSim/blob/main/climsim_utils/data_utils.py) script to see how your model does on point estimates and use the `calc_CRPS` method to check how well-calibrated your model is if it's stochastic. 😊
+Evaluation time! Use the [`./tool/litho_eval.py`](https://github.com/dw-hongquan/LithoSim/blob/main/tool/litho_eval.py) to see how your model does! Use the **iou_dice**, **cal_acc**, **cal_mse**, and **EPECalculator** methods in the [`climsim_utils/data_utils.py`](https://github.com/dw-hongquan/LithoSim/blob/main/src/models/losses/metrics.py) script to see how your model does on point estimates. 😊
