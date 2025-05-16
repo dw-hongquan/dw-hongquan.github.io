@@ -62,4 +62,4 @@ Train your model on the training/validation data and test using the test data. E
 
 **Evaluation**
 
-Evaluation time! Use the [`./tool/litho_eval.py`](https://github.com/dw-hongquan/LithoSim/blob/main/tool/litho_eval.py) to see how your model does! Use the **iou_dice**, **cal_acc**, **cal_mse**, and **EPECalculator** methods in the [`climsim_utils/data_utils.py`](https://github.com/dw-hongquan/LithoSim/blob/main/src/models/losses/metrics.py) script to see how your model does on point estimates. 😊
+Evaluation time! Use the [`./tool/litho_eval.py`](https://github.com/dw-hongquan/LithoSim/blob/main/tool/litho_eval.py) to see how your model does! Use the **iou_dice**, **cal_acc**, **cal_mse**, and **EPECalculator** methods in the [`src/models/losses/metrics.py`](https://github.com/dw-hongquan/LithoSim/blob/main/src/models/losses/metrics.py) script to see how your model does on point estimates. 😊
