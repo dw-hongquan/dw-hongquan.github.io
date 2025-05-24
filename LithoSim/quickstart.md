@@ -50,10 +50,13 @@ LithoSim use ```lithosim_path.txt``` to manage all sub-datasets ([opc_metal](htt
 python tool/dataset2txt.py
 ```
 
-Each link of the ```.txt``` path file will contain 5 components:
+Each line of the ```lithosim_path.txt``` path file will contain 5 components:
 
-```
+```python
 source_path mask_path dose_value defocus_value resist_path
+
+# i.e.
+/home/hehq/dataset/lithosim/opc_metal/train_val/1/source_simple.src /home/hehq/dataset/lithosim/opc_metal/train_val/1/mask.png 1.0 -40 /home/hehq/dataset/lithosim/opc_metal/train_val/1/RI_1.0_dose_-40_defocus.png
 ```
 
 **Training and Validation**
