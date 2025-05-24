@@ -17,9 +17,9 @@ tar -xzvf *.tar.gz
 
 Training data corresponds to **train_val** folders (i.e. ```./lithosim/opc_metal/train_val```). Test data corresponds to **test** folders (i.e. in-distribution ```./lithosim/opc_metal/test``` and out-of-distribution ```./lithosim/ood/test```). The training and validation splits can be found at ```train_val_split``` in [```./configs/data/litho.yaml```](https://github.com/dw-hongquan/LithoSim/blob/main/configs/data/litho.yaml).
 
-**Code Download and Enviromental Requirements**
+**Code Download and Environmental Requirements**
 
-Following these commands:
+Clone the Github repo [here](https://github.com/dw-hongquan/LithoSim) and set your own environment following these commands:
 
 ```bash
 # clone project
