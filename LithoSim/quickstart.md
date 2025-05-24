@@ -10,12 +10,12 @@
 
 The first step is to download LithoSim Benchmark [here](https://huggingface.co/datasets/grandiflorum/LithoSim), featuring over 4 million high-resolution input-output pairs with rigorous physical correspondence. The dataset systematically incorporates alterable optical source distributions, metal and via mask topologies with optical proximity correction (OPC) variants, and process windows reflecting fab-realistic variations.
 
-Please unzip all *.tar.gz file using following command
+Please unzip all ```*.tar.gz``` file using following command
 ```
 tar -xzvf *.tar.gz
 ```
 
-Training data corresponds to **train_val** folders (i.e. ```./lithosim/opc_metal/train_val```). Test data corresponds to **test** folders (i.e. ```./lithosim/opc_metal/test``` and ```./lithosim/ood/test```). The training and validation splits can be found at ```train_val_split``` in ```./lithosim/configs/data/litho.yaml```.
+Training data corresponds to **train_val** folders (i.e. ```./lithosim/opc_metal/train_val```). Test data corresponds to **test** folders (i.e. in-distribution ```./lithosim/opc_metal/test``` and out-of-distribution ```./lithosim/ood/test```). The training and validation splits can be found at ```train_val_split``` in [```./configs/data/litho.yaml```](https://github.com/dw-hongquan/LithoSim/blob/main/configs/data/litho.yaml).
 
 **Code Download and Enviromental Requirements**
 
