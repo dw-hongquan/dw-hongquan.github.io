@@ -44,7 +44,7 @@ conda install --file environment.yaml
 
 **Prepare Dataset Path Files**
 
-LithoSim use ```lithosim_path.txt``` to manage all sub-datasets. Please use ```./lithosim/tool/dataset2txt.py``` and replace ```dataset_dir``` and ```txt_path``` to generate you own path.
+LithoSim use ```lithosim_path.txt``` to manage all sub-datasets ([opc_metal](https://huggingface.co/datasets/grandiflorum/LithoSim/viewer/opc_metal), [metal](https://huggingface.co/datasets/grandiflorum/LithoSim/viewer/metal), [opc_via](https://huggingface.co/datasets/grandiflorum/LithoSim/viewer/opc_via), [via](https://huggingface.co/datasets/grandiflorum/LithoSim/viewer/via), [ood](https://huggingface.co/datasets/grandiflorum/LithoSim/viewer/ood)). Please use [```./tool/dataset2txt.py```](https://github.com/dw-hongquan/LithoSim/blob/main/tool/dataset2txt.py) and replace ```dataset_dir``` and ```txt_path``` to generate you own path.
 
 ```bash
 python tool/dataset2txt.py
