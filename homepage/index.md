@@ -5,10 +5,6 @@ title: "Resume Page"
 
 # **Publications**
 
-*   **Hongquan He**, Zhen Wang, Jingya Wang, Tao Wu, Xuming He, Bei Yu, Jingyi Yu$^\dagger$, Hao Geng$^\dagger$.  
-    **LithoSim: A Large, Holistic Lithography Simulation Benchmark for AI-Driven Semiconductor Manufacturing.**  
-    *Annual Conference on Neural Information Processing Systems (NeurIPS)*, San Diego, Dec. 2-7, 2025. (under review)
-
 *   **Hongquan He**, Guowen Kuang, Qi Sun, Hao Geng$^\dagger$.  
     **PoLM: Point Cloud and Large Pre-trained Model Catch Mixed-type Wafer Defect Pattern Recognition.**  
     *IEEE/ACM Proceedings Design, Automation and Test in Europe (DATE)*, Valencia, Spain, Mar. 25–27, 2024.
