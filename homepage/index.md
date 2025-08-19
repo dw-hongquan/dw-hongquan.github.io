@@ -1,6 +1,6 @@
 ---
-layout: default
-title: "This is Hongquan!"
+layout: resume
+title: "Resume Page"
 ---
 
 # **Publications**
