@@ -5,7 +5,7 @@ title: "Resume Page"
 
 ## **Basis**
 
-Currently, I'm a M.S. student in electronic engineering at [School of Information Science and Technology](https://sist.shanghaitech.edu.cn/sist_en/) from [Shanghaitech Univ.](https://www.shanghaitech.edu.cn/eng/), under supervised by His Excellency [Prof. Hao Geng](https://true-genghao.github.io/genghao/).
+Currently, I'm a M.S. student in electronic engineering at [School of Information Science and Technology](https://sist.shanghaitech.edu.cn/sist_en/) from [ShanghaiTech Univ.](https://www.shanghaitech.edu.cn/eng/), under supervised by His Excellency [Prof. Hao Geng](https://true-genghao.github.io/genghao/).
 
 My research insterests include
 
