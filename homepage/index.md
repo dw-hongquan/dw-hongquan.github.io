@@ -39,7 +39,7 @@ My research insterests include
 <sup>\*</sup>Equal contribution  
 <sup>&dagger;</sup>Corresponding author.
 
-## Simplified Design Pipeline
+## **Simplified Design Pipeline**
                         ┌──────────────────────────┐
                         │     EDA Design Flow      │
                         └──────────────────────────┘
