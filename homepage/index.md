@@ -40,6 +40,7 @@ My research insterests include
 <sup>&dagger;</sup>Corresponding author.
 
 ## **Simplified Design Pipeline**
+
                         ┌──────────────────────────┐
                         │     EDA Design Flow      │
                         └──────────────────────────┘
