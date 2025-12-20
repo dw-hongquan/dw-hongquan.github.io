@@ -38,3 +38,114 @@ My research insterests include
 
 <sup>\*</sup>Equal contribution  
 <sup>&dagger;</sup>Corresponding author.
+
+## Simplified Design Pipeline
+                        ┌──────────────────────────┐
+                        │     EDA Design Flow      │
+                        └──────────────────────────┘
+                                     │
+                                     ▼
+                       ┌─────────────────────────┐
+                       │     Schematic Design    │
+                       │  (Circuit Entry & Setup)│
+                       └─────────────────────────┘
+                                     │
+                                     ▼
+                       ┌─────────────────────────┐
+                       │   Pre-layout Simulation │
+                       │    (Functional / DC /   │
+                       │      Transient / AC)    │
+                       └─────────────────────────┘
+                                     │
+                                     ▼
+                            ┌───────────────┐
+                            │   Meet Spec?  │◄─────────────┐
+                            └───────────────┘              │
+                                     │ No                  │
+                                 Yes │                     │
+                                     ▼                     │
+                       ┌─────────────────────────┐         │
+                       │    Layout Generation    │         │
+                       │   (Place & Route /      │         │
+                       │    Manual Drawing)      │         │
+                       └─────────────────────────┘         │
+                                     │                     │
+                                     ▼                     │
+                       ┌─────────────────────────┐         │
+                       │   Design Rule Checking  │         │
+                       │         (DRC)           │         │
+                       └─────────────────────────┘         │
+                                     │                     │
+                                     ▼                     │
+                            ┌───────────────┐              │
+                            │   DRC Clean?  │◄─────────────┐
+                            └───────────────┘              │
+                                     │ No                  │
+                                 Yes │                     │
+                                     ▼                     │
+                       ┌─────────────────────────┐         │
+                       │  Layout vs. Schematic   │         │
+                       │         (LVS)           │         │
+                       └─────────────────────────┘         │
+                                     │                     │
+                                     ▼                     │
+                            ┌───────────────┐              │
+                            │   LVS Match?  │◄─────────────┐
+                            └───────────────┘              │
+                                     │ No                  │
+                                 Yes │                     │
+                                     ▼                     │
+                       ┌─────────────────────────┐         │
+                       │   Critical Pattern      │         │
+                       │     Selection &         │         │
+                       │   Hotspot Detection     │         │
+                       └─────────────────────────┘         │
+                                     │                     │
+                                     ▼                     │
+                       ┌─────────────────────────┐         │
+                       │ Source-Mask Optimization│         │
+                       │        (SMO)            │         │
+                       └─────────────────────────┘         │
+                                     │                     │
+                                     ▼                     │
+                       ┌─────────────────────────┐         │
+                       │  Optical Proximity      │         │
+                       │  Correction (OPC)       │         │
+                       └─────────────────────────┘         │
+                                     │                     │
+                                     ▼                     │
+                       ┌─────────────────────────┐         │
+                       │  Post-OPC Verification  │         │
+                       │  (ORC / LRC / DRC+)     │         │
+                       └─────────────────────────┘         │
+                                     │                     │
+                                     ▼                     │
+                            ┌───────────────┐              │
+                            │    OPC Clean? │◄─────────────┐
+                            └───────────────┘              │
+                                     │ No                  │
+                                 Yes │                     │
+                                     ▼                     │
+                       ┌─────────────────────────┐         │
+                       │ Parasitic Extraction    │         │
+                       │  (PEX / RCX) with       │         │
+                       │  Post-OPC Geometry      │         │
+                       └─────────────────────────┘         │
+                                     │                     │
+                                     ▼                     │
+                       ┌─────────────────────────┐         │
+                       │  Post-layout Simulation │         │
+                       │   (with Parasitics)     │         │
+                       └─────────────────────────┘         │
+                                     │                     │
+                                     ▼                     │
+                            ┌───────────────┐              │
+                            │   Meet Spec?  │──────────────┘
+                            └───────────────┘
+                                     │ Yes
+                                     ▼
+                       ┌─────────────────────────┐
+                       │   Tape-out / GDSII      │
+                       │   (Mask Data Prep &     │
+                       │     Manufacturing)      │
+                       └─────────────────────────┘
