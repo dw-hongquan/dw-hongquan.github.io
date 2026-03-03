@@ -1,0 +1,354 @@
+/* ============================================
+   Resume Page Stylesheet
+   ============================================ */
+
+/* === Reset & Base Styles === */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    line-height: 1.6;
+    color: #1a1a1a;
+    background: #fafafa;
+    padding: 2rem 1rem;
+}
+
+/* === Layout === */
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 24px;
+    box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.1);
+    padding: 3rem 2.5rem;
+}
+
+/* === Profile Section === */
+.profile-section {
+    margin-bottom: 3rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #eaeef2;
+}
+
+.profile-section h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    margin-bottom: 1rem;
+    color: #0a1929;
+}
+
+.profile-section p {
+    color: #2d3a4f;
+    font-size: 1.1rem;
+    max-width: 800px;
+}
+
+/* === Research Interests === */
+.interests {
+    margin-top: 2rem;
+}
+
+.interests p {
+    font-size: 1rem;
+    color: #2d3a4f;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.interests ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.interests li {
+    background: linear-gradient(135deg, #f5f9ff 0%, #ffffff 100%);
+    padding: 1rem 1.5rem;
+    border-radius: 12px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: #1e3a6f;
+    border: 1px solid #d9e2ef;
+    border-left: 4px solid #2b6ed9;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+}
+
+.interests li:before {
+    content: '▹';
+    color: #2b6ed9;
+    font-size: 1.2rem;
+    margin-right: 0.75rem;
+    font-weight: bold;
+}
+
+.interests li:hover {
+    transform: translateX(4px);
+    box-shadow: 0 4px 12px rgba(43, 110, 217, 0.15);
+    border-left-color: #1a4f9e;
+}
+
+/* === Publications Section === */
+.publications-section {
+    margin-top: 2rem;
+}
+
+.publications-note {
+    font-size: 0.95rem;
+    color: #4a5b73;
+    font-style: italic;
+    margin-bottom: 1.5rem;
+}
+
+.publications-section h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    color: #0a1929;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.publications-section h2:after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 60px;
+    height: 4px;
+    background: linear-gradient(90deg, #2b6ed9, #7b9fd9);
+    border-radius: 2px;
+}
+
+/* === Papers Grid === */
+.papers-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.paper-card {
+    background: white;
+    border: 1px solid #eaeef2;
+    border-radius: 16px;
+    padding: 1.8rem;
+    transition: all 0.3s ease;
+    position: relative;
+    box-shadow: 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.paper-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 20px 30px -10px rgba(0, 0, 0, 0.1);
+    border-color: #b8c9e0;
+}
+
+/* Primary author highlight */
+.paper-card.primary-author {
+    background: linear-gradient(to right, #ffffff, #f5f9ff);
+    border-left: 6px solid #2b6ed9;
+    box-shadow: 0 8px 20px -8px rgba(43, 110, 217, 0.2);
+}
+
+.paper-card.primary-author:hover {
+    border-left-color: #1a4f9e;
+    box-shadow: 0 12px 25px -10px rgba(43, 110, 217, 0.3);
+}
+
+/* === Badges === */
+.paper-badge {
+    display: flex;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+
+.badge-conf,
+.badge-primary,
+.badge-award,
+.badge-example {
+    display: inline-block;
+    padding: 0.3rem 0.9rem;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+}
+
+.badge-conf {
+    background: #6c757d;
+    color: white;
+}
+
+.badge-primary {
+    background: #2b6ed9;
+    color: white;
+    box-shadow: 0 2px 8px rgba(43, 110, 217, 0.3);
+}
+
+.badge-award {
+    background: #f59e0b;
+    color: white;
+}
+
+.badge-example {
+    background: #eaeef2;
+    color: #1e3a6f;
+}
+
+/* === Paper Content === */
+.paper-title {
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1.4;
+    margin-bottom: 0.8rem;
+    color: #0a1929;
+}
+
+.paper-authors {
+    font-size: 0.95rem;
+    color: #2d3a4f;
+    margin-bottom: 0.8rem;
+    line-height: 1.6;
+}
+
+.paper-authors strong {
+    color: #0a1929;
+    font-weight: 600;
+}
+
+.paper-venue {
+    font-size: 0.95rem;
+    color: #4a5b73;
+    font-style: italic;
+    margin-bottom: 1.2rem;
+    padding-bottom: 1.2rem;
+    border-bottom: 1px dashed #d9e2ef;
+}
+
+/* === Paper Links === */
+.paper-links {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.paper-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    color: #2b6ed9;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: all 0.2s;
+    padding: 0.4rem 0;
+}
+
+.paper-link:hover {
+    color: #1a4f9e;
+    transform: translateX(2px);
+}
+
+.paper-link .icon {
+    transition: transform 0.2s;
+}
+
+.paper-link:hover .icon {
+    transform: scale(1.1);
+}
+
+/* === Paper Footer === */
+.paper-footer {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid #eaeef2;
+}
+
+.footnote {
+    font-size: 0.85rem;
+    color: #4a5b73;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.separator {
+    color: #b8c9e0;
+    font-weight: 300;
+    margin: 0 0.2rem;
+}
+
+sup {
+    font-size: 0.7rem;
+    vertical-align: super;
+}
+
+/* === Global Links === */
+a {
+    color: #2b6ed9;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+a:hover {
+    color: #1a4f9e;
+    text-decoration: underline;
+}
+
+/* === Responsive Design === */
+@media (max-width: 600px) {
+    .container {
+        padding: 1.5rem;
+    }
+
+    .profile-section h1 {
+        font-size: 2rem;
+    }
+
+    .paper-title {
+        font-size: 1.2rem;
+    }
+
+    .paper-card {
+        padding: 1.2rem;
+    }
+
+    .interests ul {
+        gap: 0.75rem;
+    }
+
+    .interests li {
+        padding: 0.875rem 1.25rem;
+        font-size: 0.9rem;
+    }
+}
+
+/* === Print Styles === */
+@media print {
+    body {
+        background: white;
+        padding: 0.5in;
+    }
+
+    .container {
+        box-shadow: none;
+        padding: 0;
+    }
+
+    .paper-card {
+        break-inside: avoid;
+        border: 1px solid #ccc;
+    }
+}

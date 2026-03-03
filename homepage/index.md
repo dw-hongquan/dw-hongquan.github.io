@@ -5,8 +5,9 @@ title: "Resume Page"
 
 ## **Basis**
 
-Currently, I'm a M.S. student in electronic engineering at [School of Information Science and Technology](https://sist.shanghaitech.edu.cn/sist_en/) from [ShanghaiTech Univ.](https://www.shanghaitech.edu.cn/eng/), supervised by His Excellency [Prof. Hao Geng](https://true-genghao.github.io/genghao/).
+Currently, I'm a M.S. student in electronic engineering at [School of Information Science and Technology](https://sist.shanghaitech.edu.cn/sist_en) from [ShanghaiTech Univ.](https://www.shanghaitech.edu.cn/eng/), supervised by His Excellency [Prof. Hao Geng](https://true-genghao.github.io/genghao/).
 
+<!-- Research Interests Section -->
 <div class="interests">
   <p>My research insterests include</p>
   <ul>
@@ -20,8 +21,12 @@ Currently, I'm a M.S. student in electronic engineering at [School of Informatio
 
 <p class="publications-note">Representative publications in which I am the primary author are highlighted.</p>
 
-{% assign primary_author_papers = "He, Hongquan|Hongquan He" | split: "|" %}
+<!-- ============================================
+     Publications Data
+     Format: ID|Authors|Title|Venue|IsPrimary|ProjectLink|PaperLink
+     ============================================ -->
 
+{% assign primary_author_papers = "He, Hongquan|Hongquan He" | split: "|" %}
 {% assign publications = site.data.publications | default: site.empty_array %}
 
 {% assign papers = "
@@ -34,9 +39,11 @@ DATE-2024|**Hongquan He**, Guowen Kuang, Qi Sun, Hao Geng<sup>&dagger;</sup>|PoL
 " | split: "
 " %}
 
+<!-- Papers Grid -->
 <div class="papers-grid">
   {% for paper in papers %}
     {% if paper != "" %}
+      {% comment %} Parse paper data {% endcomment %}
       {% assign fields = paper | split: "|" %}
       {% assign paper_id = fields[0] %}
       {% assign authors = fields[1] %}
@@ -46,27 +53,33 @@ DATE-2024|**Hongquan He**, Guowen Kuang, Qi Sun, Hao Geng<sup>&dagger;</sup>|PoL
       {% assign link = fields[5] | default: "" %}
       {% assign paper_link = fields[6] | default: "" %}
 
+      {% comment %} Extract conference name and year from ID {% endcomment %}
       {% assign conf_parts = paper_id | split: "-" %}
       {% assign conf_name = conf_parts[0] %}
       {% assign conf_year = conf_parts[1] | slice: 2, 2 %}
 
+      {% comment %} Check if primary author {% endcomment %}
       {% assign is_primary_author = false %}
       {% if is_primary == "true" %}
         {% assign is_primary_author = true %}
       {% endif %}
 
+      {% comment %} Render paper card {% endcomment %}
       <div class="paper-card {% if is_primary_author %}primary-author{% endif %}" id="paper-{{ paper_id }}">
+        <!-- Badges -->
         <div class="paper-badge">
           <span class="badge-conf">{{ conf_name }}'{{ conf_year }}</span>
           {% if venue contains "Best Paper" %}
             <span class="badge-award">Best Paper Nomination</span>
           {% endif %}
         </div>
-        
+
+        <!-- Paper Details -->
         <h3 class="paper-title">{{ title }}</h3>
         <p class="paper-authors">{{ authors | markdownify | strip }}</p>
         <p class="paper-venue">{{ venue }}</p>
-        
+
+        <!-- Links -->
         <div class="paper-links">
           {% if link != "" %}
             <a href="{{ link }}" target="_blank" class="paper-link">
@@ -90,6 +103,7 @@ DATE-2024|**Hongquan He**, Guowen Kuang, Qi Sun, Hao Geng<sup>&dagger;</sup>|PoL
   {% endfor %}
 </div>
 
+<!-- Footnote -->
 <div class="paper-footer">
   <p class="footnote">
     <sup>*</sup>Equal contribution
