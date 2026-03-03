@@ -27,13 +27,13 @@ My research insterests include
     **LMLitho: A Large Vision Model-Driven Lithography Simulation Framework.**  
     *IEEE/ACM International Conference on Computer-Aided Design (ICCAD)*, Munich, Oct. 26–30, 2025. (Best Paper Award Nomination) [[Paper]](https://ieeexplore.ieee.org/document/11240940/)
 
-*   Guojin Chen, **Hongquan He**, Peng Xu, Hao Geng, Bei Yu<sup>&dagger;</sup>.  
-    **Effcient Bilevel Source Mask Optimization.**  
-    *IEEE/ACM Proceedings Design Automation Conference (DAC)*, San Francisco, Jun. 23–27, 2024. [[Paper]](https://dl.acm.org/doi/10.1145/3649329.3656252)
-
 *   Kai Ma, Zhen Wang, **Hongquan He**, Qi Xu, Tinghuan Chen, Hao Geng<sup>&dagger;</sup>.  
     **LMM-IR: Large-Scale Netlist-Aware Multi-modal Framework for Static IR-Drop Prediction.**  
     *IEEE/ACM Design Automation Conference (DAC)*, San Francisco, Jun. 22–25, 2025. [[Paper]](https://ieeexplore.ieee.org/document/11133205)
+
+*   Guojin Chen, **Hongquan He**, Peng Xu, Hao Geng, Bei Yu<sup>&dagger;</sup>.  
+    **Effcient Bilevel Source Mask Optimization.**  
+    *IEEE/ACM Proceedings Design Automation Conference (DAC)*, San Francisco, Jun. 23–27, 2024. [[Paper]](https://dl.acm.org/doi/10.1145/3649329.3656252)
 
 *   **Hongquan He**, Guowen Kuang, Qi Sun, Hao Geng<sup>&dagger;</sup>.  
     **PoLM: Point Cloud and Large Pre-trained Model Catch Mixed-type Wafer Defect Pattern Recognition.**  
