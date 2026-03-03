@@ -92,7 +92,7 @@ DATE-2024|**Hongquan He**, Guowen Kuang, Qi Sun, Hao Geng<sup>&dagger;</sup>|PoL
 
 <div class="paper-footer">
   <p class="footnote">
-    <sup>\*</sup>Equal contribution
+    <sup>*</sup>Equal contribution
     <span class="separator">•</span>
     <sup>&dagger;</sup>Corresponding author
   </p>
