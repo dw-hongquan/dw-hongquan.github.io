@@ -15,18 +15,17 @@ My research insterests include
 
 ## **Publications**
 
+*   **Hongquan He**, Ziyang Yu, Jiaqi Liu, Bei Yu, Jingyi Yu<sup>&dagger;</sup>, Hao Geng<sup>&dagger;</sup>.  
+    **CPW-SMO: Generating Mask Sets and Common Source for Maximum Common Process Window.**  
+    *IEEE/ACM Proceedings Design Automation Conference (DAC)*, Long Beach, Jul. 26–29, 2026. (accepted)
+
 *   **Hongquan He**, Zhen Wang, Jingya Wang, Tao Wu, Xuming He, Bei Yu, Jingyi Yu<sup>&dagger;</sup>, Hao Geng<sup>&dagger;</sup>.
     **LithoSim: A Large, Holistic Lithography Simulation Benchmark for AI-Driven Semiconductor Manufacturing.**
-    *Annular Conference on Neural Information Processing Systems (NeurIPS 2025)*, San Diego, USA, Dec. 01-07, 2025. [[Link]](https://dw-hongquan.github.io/LithoSim/) [[Paper]](https://neurips.cc/virtual/2025/loc/san-diego/poster/121778)
+    *Annular Conference on Neural Information Processing Systems (NeurIPS)*, San Diego, USA, Dec. 01-07, 2025. [[Link]](https://dw-hongquan.github.io/LithoSim/) [[Paper]](https://neurips.cc/virtual/2025/loc/san-diego/poster/121778)
 
 *   Zhen Wang<sup>\*</sup>, **Hongquan He<sup>\*</sup>**, Tao Wu, Xuming He, Qi Sun, Cheng Zhuo, Bei Yu, Jingyi Yu<sup>&dagger;</sup>, Hao Geng<sup>&dagger;</sup>.  
     **LMLitho: A Large Vision Model-Driven Lithography Simulation Framework.**  
     *IEEE/ACM International Conference on Computer-Aided Design (ICCAD)*, Munich, Oct. 26–30, 2025. (Best Paper Award Nomination) [[Paper]](https://ieeexplore.ieee.org/document/11240940/)
-
-
-*   **Hongquan He**, Guowen Kuang, Qi Sun, Hao Geng<sup>&dagger;</sup>.  
-    **PoLM: Point Cloud and Large Pre-trained Model Catch Mixed-type Wafer Defect Pattern Recognition.**  
-    *IEEE/ACM Proceedings Design, Automation and Test in Europe (DATE)*, Valencia, Spain, Mar. 25–27, 2024. [[Paper]](https://ieeexplore.ieee.org/document/10546714)
 
 *   Guojin Chen, **Hongquan He**, Peng Xu, Hao Geng, Bei Yu<sup>&dagger;</sup>.  
     **Effcient Bilevel Source Mask Optimization.**  
@@ -35,6 +34,10 @@ My research insterests include
 *   Kai Ma, Zhen Wang, **Hongquan He**, Qi Xu, Tinghuan Chen, Hao Geng<sup>&dagger;</sup>.  
     **LMM-IR: Large-Scale Netlist-Aware Multi-modal Framework for Static IR-Drop Prediction.**  
     *IEEE/ACM Design Automation Conference (DAC)*, San Francisco, Jun. 22–25, 2025. [[Paper]](https://ieeexplore.ieee.org/document/11133205)
+
+*   **Hongquan He**, Guowen Kuang, Qi Sun, Hao Geng<sup>&dagger;</sup>.  
+    **PoLM: Point Cloud and Large Pre-trained Model Catch Mixed-type Wafer Defect Pattern Recognition.**  
+    *IEEE/ACM Proceedings Design, Automation and Test in Europe (DATE)*, Valencia, Spain, Mar. 25–27, 2024. [[Paper]](https://ieeexplore.ieee.org/document/10546714)
 
 <sup>\*</sup>Equal contribution  
 <sup>&dagger;</sup>Corresponding author.
