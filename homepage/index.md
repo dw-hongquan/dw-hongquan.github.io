@@ -7,11 +7,14 @@ title: "Resume Page"
 
 Currently, I'm a M.S. student in electronic engineering at [School of Information Science and Technology](https://sist.shanghaitech.edu.cn/sist_en/) from [ShanghaiTech Univ.](https://www.shanghaitech.edu.cn/eng/), supervised by His Excellency [Prof. Hao Geng](https://true-genghao.github.io/genghao/).
 
-My research insterests include
-
-*   AI4Physics, AI4Optics, AI4Optimization
-*   Deep learning and optimization in Electronic Design Automation
-*   Design for manufacturing
+<div class="interests">
+  <p>My research insterests include</p>
+  <ul>
+    <li>AI4Physics, AI4Optics, AI4Optimization</li>
+    <li>Deep learning and optimization in Electronic Design Automation</li>
+    <li>Design for manufacturing</li>
+  </ul>
+</div>
 
 ## **Publications**
 
