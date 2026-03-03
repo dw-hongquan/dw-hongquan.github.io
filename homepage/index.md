@@ -15,6 +15,8 @@ My research insterests include
 
 ## **Publications**
 
+<p class="publications-note">Representative publications in which I am the primary author are highlighted.</p>
+
 {% assign primary_author_papers = "He, Hongquan|Hongquan He" | split: "|" %}
 
 {% assign publications = site.data.publications | default: site.empty_array %}
@@ -48,9 +50,6 @@ DATE-2024|**Hongquan He**, Guowen Kuang, Qi Sun, Hao Geng<sup>&dagger;</sup>|PoL
       
       <div class="paper-card {% if is_primary_author %}primary-author{% endif %}" id="paper-{{ paper_id }}">
         <div class="paper-badge">
-          {% if is_primary_author %}
-            <span class="badge-primary">⭐ Primary Author</span>
-          {% endif %}
           {% if venue contains "Best Paper" %}
             <span class="badge-award">🏆 Best Paper Nomination</span>
           {% endif %}
@@ -85,8 +84,6 @@ DATE-2024|**Hongquan He**, Guowen Kuang, Qi Sun, Hao Geng<sup>&dagger;</sup>|PoL
 
 <div class="paper-footer">
   <p class="footnote">
-    <span class="badge-example">⭐ Primary author papers are highlighted</span>
-    <span class="separator">•</span>
     <sup>\*</sup>Equal contribution
     <span class="separator">•</span>
     <sup>&dagger;</sup>Corresponding author
