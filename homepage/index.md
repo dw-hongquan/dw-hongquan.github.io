@@ -42,16 +42,21 @@ DATE-2024|**Hongquan He**, Guowen Kuang, Qi Sun, Hao Geng<sup>&dagger;</sup>|PoL
       {% assign is_primary = fields[4] %}
       {% assign link = fields[5] | default: "" %}
       {% assign paper_link = fields[6] | default: "" %}
-      
+
+      {% assign conf_parts = paper_id | split: "-" %}
+      {% assign conf_name = conf_parts[0] %}
+      {% assign conf_year = conf_parts[1] | slice: 2, 2 %}
+
       {% assign is_primary_author = false %}
       {% if is_primary == "true" %}
         {% assign is_primary_author = true %}
       {% endif %}
-      
+
       <div class="paper-card {% if is_primary_author %}primary-author{% endif %}" id="paper-{{ paper_id }}">
         <div class="paper-badge">
+          <span class="badge-conf">{{ conf_name }}'{{ conf_year }}</span>
           {% if venue contains "Best Paper" %}
-            <span class="badge-award">🏆 Best Paper Nomination</span>
+            <span class="badge-award">Best Paper Nomination</span>
           {% endif %}
         </div>
         
