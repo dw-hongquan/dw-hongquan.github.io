@@ -56,7 +56,7 @@ DATE-2024|**Hongquan He**, Guowen Kuang, Qi Sun, Hao Geng<sup>&dagger;</sup>|PoL
         </div>
         
         <h3 class="paper-title">{{ title }}</h3>
-        <p class="paper-authors">{{ authors }}</p>
+        <p class="paper-authors">{{ authors | markdownify | strip }}</p>
         <p class="paper-venue">{{ venue }}</p>
         
         <div class="paper-links">
