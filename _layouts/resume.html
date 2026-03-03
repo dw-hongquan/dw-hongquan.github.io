@@ -327,12 +327,7 @@
     <main class="container">
         <div class="profile-section">
             <h1>{{ page.title }}</h1>
-            {{ content | split: '## **Publications**' | first }}
-        </div>
-
-        <div class="publications-section">
-            <h2>Publications</h2>
-            {{ content | split: '## **Publications**' | last }}
+            {{ content | split: '## **Basis**' | last }}
         </div>
     </main>
 </body>

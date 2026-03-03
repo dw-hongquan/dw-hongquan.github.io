@@ -13,6 +13,8 @@ My research insterests include
 *   Deep learning and optimization in Electronic Design Automation
 *   Design for manufacturing
 
+## **Publications**
+
 <p class="publications-note">Representative publications in which I am the primary author are highlighted.</p>
 
 {% assign primary_author_papers = "He, Hongquan|Hongquan He" | split: "|" %}
