@@ -3,12 +3,8 @@ layout: default
 title: "LithoSim: A Large, Holistic Lithography Simulation Benchmark for AI-Driven Semiconductor Manufacturing"
 ---
 
-<!-- | Update Status                                                                                    | Contributors                                                                                                                                                             | Deployment Status                                                                                                                                                                                                                          |
-| ------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| ![GitHub last commit](https://img.shields.io/github/last-commit/dw-hongquan/dw-hongquan.github.io) | [![contributors](https://img.shields.io/github/contributors/dw-hongquan/dw-hongquan.github.io.svg)](https://github.com/dw-hongquan/dw-hongquan.github.io/graphs/contributors) | [![pages-build-deployment](https://github.com/dw-hongquan/dw-hongquan.github.io/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/dw-hongquan/dw-hongquan.github.io/actions/workflows/pages/pages-build-deployment) | -->
-
-> [!NOTE]
-> I plan to release *LithoSim 2.0*, a benchmark considering Zernike abberations and vector imaging in DUV lithography.
+> [NOTE]
+> Plan to release *LithoSim 2.0*, a benchmark considering Zernike abberations and vector imaging in DUV litho.
 > 
 
 ## **Overview**
